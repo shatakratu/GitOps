@@ -1,0 +1,7 @@
+sed -i "s#image: .*#image: 192.168.56.106/sattvika/vishva:${Build_Number_Image}#" Deployment/deployment.yaml
+cat Deployment/deployment.yaml
+git config --global user.email "vishoka@proton.me"
+git config --global user.name "shatakratu"
+git add .
+git commit -m "Deployment file modified by Jenkins job with the image Harbor image 192.168.56.106/sattvika/vishva:${Build_Number_Image}"
+
